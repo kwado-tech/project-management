@@ -1,12 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_manager/theme/theme_colors.dart';
 
-// #c22f22 Red
-// #415893 Blue
-// #f3f3f3 Input Border
-// #e6e6e6 Input Text
-// #939393 Text Color
-// #fafafa Background
-// #ffffff AppBar
+
 
 void main() => runApp(MyApp());
 
@@ -78,6 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
+        backgroundColor: tPrimaryColor,
       ),
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
