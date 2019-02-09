@@ -11,9 +11,11 @@ final Color tErrorColor = HexColor('b00020');
 
 
 final Color tBackgroundColor = HexColor('fafafa');
-final Color tAppBarColor = HexColor('fafafa');
+final Color tAppBarColor = HexColor('ffffff');
 
+final Color tTextColor = HexColor('939393');
+final Color tAccentButtonTextColor = HexColor('ffffff');
 
-final Color tTextColor = HexColor('fafafa');
-final Color tInputTextColor = HexColor('fafafa');
-final Color tInputBorderColor = HexColor('fafafa');
+final Color tTextFieldTextColor = HexColor('e6e6e6');
+final Color tTextFieldBackgroundColor = HexColor('ffffff');
+final Color tTextFieldBorderColor = HexColor('f3f3f3');
