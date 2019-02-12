@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_manager/pages/auth/auth_page.dart';
+import 'package:project_manager/pages/supervisors/supervisors_page.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
 void main() => runApp(MyApp());
@@ -12,8 +13,12 @@ class MyApp extends StatelessWidget {
       title: 'Project Manager',
       theme: ThemeData(
         primaryColor: tPrimaryColor,
-        fontFamily: 'Quicksand'),
-      home: AuthPage(),
+        fontFamily: 'Quicksand',
+      ),
+      routes: <String, WidgetBuilder>{
+        '/': (BuildContext context) => AuthPage(),
+        '/supervisors': (BuildContext context) => SupervisorsPage()
+      },
     );
   }
 }

@@ -69,7 +69,10 @@ class _AuthPageState extends State<AuthPage> {
 
   Widget _buildFormControl() {
     return InkWell(
-      onTap: () {},
+      onTap: () {
+        FocusScope.of(context).requestFocus(FocusNode());
+        Navigator.of(context).pushReplacementNamed('/supervisors');
+      },
       child: Container(
         height: 50.0,
         width: 250.0,
