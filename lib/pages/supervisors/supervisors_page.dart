@@ -36,8 +36,12 @@ class SupervisorsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    void _buildHideKeyPad() {
+      FocusScope.of(context).requestFocus(FocusNode());
+    }
+
     return GestureDetector(
-      onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
+      onTap: () => _buildHideKeyPad,
       child: Scaffold(
         appBar: AppBar(
           centerTitle: true,
@@ -56,12 +60,12 @@ class SupervisorsPage extends StatelessWidget {
           // padding: EdgeInsets.symmetric(horizontal: 20.0),
           child: ListView(
             children: <Widget>[
-              SupervisorItem(),
-              SupervisorItem(),
-              SupervisorItem(),
-              SupervisorItem(),
-              SupervisorItem(),
-              SupervisorItem(),
+              SupervisorItem(hideKeyPad: _buildHideKeyPad),
+              SupervisorItem(hideKeyPad: _buildHideKeyPad),
+              SupervisorItem(hideKeyPad: _buildHideKeyPad),
+              SupervisorItem(hideKeyPad: _buildHideKeyPad),
+              SupervisorItem(hideKeyPad: _buildHideKeyPad),
+              SupervisorItem(hideKeyPad: _buildHideKeyPad),
             ],
           ),
         ),

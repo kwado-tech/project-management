@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_manager/pages/auth/auth_page.dart';
+import 'package:project_manager/pages/supervisor_details/supervisor_details.dart';
 import 'package:project_manager/pages/supervisors/supervisors_page.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
@@ -17,7 +18,9 @@ class MyApp extends StatelessWidget {
       ),
       routes: <String, WidgetBuilder>{
         '/': (BuildContext context) => AuthPage(),
-        '/supervisors': (BuildContext context) => SupervisorsPage()
+        '/supervisors': (BuildContext context) => SupervisorsPage(),
+        '/supervisor-details': (BuildContext context) =>
+            SupervisorDetailsPage(),
       },
     );
   }

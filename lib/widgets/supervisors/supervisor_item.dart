@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
 class SupervisorItem extends StatelessWidget {
+  final Function hideKeyPad;
+
+  const SupervisorItem({Key key, @required this.hideKeyPad}) : super(key: key);
+
   Widget _buildSupervisorImage() {
     return Stack(
       children: <Widget>[
@@ -82,7 +86,7 @@ class SupervisorItem extends StatelessWidget {
     );
   }
 
-  Widget _buildActionButtonsRow() {
+  Widget _buildActionButtonsRow(BuildContext context) {
     return ButtonBar(
       alignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -100,7 +104,10 @@ class SupervisorItem extends StatelessWidget {
             Icons.info_outline,
             color: tPrimaryColor,
           ),
-          onPressed: () {},
+          onPressed: () {
+            hideKeyPad();
+            Navigator.of(context).pushNamed('/supervisor-details');
+          },
         ),
       ],
     );
@@ -119,7 +126,7 @@ class SupervisorItem extends StatelessWidget {
             _buildTeamCountRow(),
             Divider(),
             _buildLocationRow(),
-            _buildActionButtonsRow(),
+            _buildActionButtonsRow(context),
           ],
         ),
       ),
