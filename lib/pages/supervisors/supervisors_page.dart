@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:project_manager/theme/theme_colors.dart';
+import 'package:project_manager/widgets/supervisors/side_drawer.dart';
 import 'package:project_manager/widgets/supervisors/supervisor_item.dart';
 
 class SupervisorsPage extends StatelessWidget {
@@ -56,6 +57,7 @@ class SupervisorsPage extends StatelessWidget {
             child: _buildSearchTextField(),
           ),
         ),
+        drawer: SideDrawer(),
         body: Container(
           // padding: EdgeInsets.symmetric(horizontal: 20.0),
           child: ListView(
