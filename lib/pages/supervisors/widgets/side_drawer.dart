@@ -62,7 +62,7 @@ class SideDrawer extends StatelessWidget {
                             fontSize: 16.0,
                             fontWeight: FontWeight.bold),
                       ),
-                      onTap: () {},
+                      onTap: () => Navigator.of(context).pushNamed('/zones'),
                     ),
                     Divider(height: 20.0),
                     ListTile(

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:project_manager/pages/supervisors/widgets/side_drawer.dart';
+import 'package:project_manager/pages/supervisors/widgets/supervisor_item.dart';
 import 'package:project_manager/theme/theme_colors.dart';
-import 'package:project_manager/widgets/supervisors/side_drawer.dart';
-import 'package:project_manager/widgets/supervisors/supervisor_item.dart';
 
 class SupervisorsPage extends StatelessWidget {
   Widget _buildSearchTextField() {
