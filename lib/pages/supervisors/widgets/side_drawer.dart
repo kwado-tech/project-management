@@ -98,6 +98,7 @@ class SideDrawer extends StatelessWidget {
                       ),
                     ),
                     ListTile(
+                      onTap: () => Navigator.of(context).pushNamed('/admin-staffs'),
                       leading: CircleAvatar(
                           backgroundColor: tBackgroundColor,
                           child: Icon(Icons.people,
