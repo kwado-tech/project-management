@@ -1,15 +1,15 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:project_manager/pages/admin_module/zones/widgets/zone_list.dart';
+import 'package:project_manager/pages/admin_module/admin_zones/widgets/admin_zone_list.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
-class ZonesPage extends StatefulWidget {
+class AdminZonesPage extends StatefulWidget {
   @override
-  _ZonesPageState createState() => _ZonesPageState();
+  _AdminZonesPageState createState() => _AdminZonesPageState();
 }
 
-class _ZonesPageState extends State<ZonesPage> {
+class _AdminZonesPageState extends State<AdminZonesPage> {
   void _buildHideKeyPad() {
     FocusScope.of(context).requestFocus(FocusNode());
   }
@@ -67,6 +67,6 @@ class _ZonesPageState extends State<ZonesPage> {
             backgroundColor: tPrimaryColor,
             child: Icon(Icons.add_location),
             onPressed: _buildZoneFormDialog),
-        body: ZoneList());
+        body: AdminZoneList());
   }
 }

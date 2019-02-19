@@ -62,7 +62,7 @@ class SideDrawer extends StatelessWidget {
                             fontSize: 16.0,
                             fontWeight: FontWeight.bold),
                       ),
-                      onTap: () => Navigator.of(context).pushNamed('/zones'),
+                      onTap: () => Navigator.of(context).pushReplacementNamed('/admin-zones'),
                     ),
                     Divider(height: 20.0),
                     ListTile(
@@ -81,6 +81,7 @@ class SideDrawer extends StatelessWidget {
                     ),
                     Divider(height: 20.0),
                     ListTile(
+                      onTap: () => Navigator.of(context).pushReplacementNamed('/admin-supervisors'),
                       leading: CircleAvatar(
                           backgroundColor: tBackgroundColor,
                           child: Icon(Icons.supervisor_account,

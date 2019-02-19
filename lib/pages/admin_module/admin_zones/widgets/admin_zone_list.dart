@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
-class ZoneList extends StatelessWidget {
+class AdminZoneList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ListView.builder(
