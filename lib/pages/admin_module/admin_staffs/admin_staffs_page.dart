@@ -11,7 +11,7 @@ class AdminStaffsPage extends StatelessWidget {
           backgroundColor: tPrimaryColor,
           child: Icon(Icons.person_add),
           onPressed: () =>
-              Navigator.of(context).pushNamed('/admin-supervisor-form')),
+              Navigator.of(context).pushNamed('/admin-staff-form')),
       body: AdminStaffList(),
     );
   }

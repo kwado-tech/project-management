@@ -97,6 +97,7 @@ class _AdminProjectManagerFormState extends State<AdminProjectManagerForm> {
 
   Widget _buildPhoneTextField() {
     return TextField(
+      maxLength: 10,
       keyboardType: TextInputType.phone,
       style: TextStyle(fontSize: 20.0),
       decoration: InputDecoration(

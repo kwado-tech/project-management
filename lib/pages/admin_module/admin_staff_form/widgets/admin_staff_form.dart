@@ -2,14 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:project_manager/models/zone.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
-
-
-class AdminSupervisorForm extends StatefulWidget {
+class AdminStaffForm extends StatefulWidget {
   @override
-  _AdminSupervisorFormState createState() => _AdminSupervisorFormState();
+  _AdminStaffFormState createState() => _AdminStaffFormState();
 }
 
-class _AdminSupervisorFormState extends State<AdminSupervisorForm> {
+class _AdminStaffFormState extends State<AdminStaffForm> {
   List<Zone> _zones = [];
 
   String _zoneController;
@@ -46,7 +44,7 @@ class _AdminSupervisorFormState extends State<AdminSupervisorForm> {
     return DropdownButtonHideUnderline(
       child: DropdownButton<String>(
         isExpanded: true,
-        hint: Text('Select supervisor zone',
+        hint: Text('Select staff zone',
             style: TextStyle(
                 color: Theme.of(context).primaryColor,
                 fontWeight: FontWeight.bold)),
@@ -103,19 +101,6 @@ class _AdminSupervisorFormState extends State<AdminSupervisorForm> {
       decoration: InputDecoration(
         labelText: 'Phone',
         hintText: 'Enter contact phone',
-        filled: true,
-        fillColor: tTextFieldBackgroundColor,
-      ),
-    );
-  }
-
-  Widget _buildEmailTextField() {
-    return TextField(
-      keyboardType: TextInputType.emailAddress,
-      style: TextStyle(fontSize: 20.0),
-      decoration: InputDecoration(
-        labelText: 'Email',
-        hintText: 'Enter email',
         filled: true,
         fillColor: tTextFieldBackgroundColor,
       ),
@@ -192,8 +177,6 @@ class _AdminSupervisorFormState extends State<AdminSupervisorForm> {
                   _buildOthernamesTextField(),
                   _buildCategoryLabel(labelText: 'Contact Details'),
                   _buildPhoneTextField(),
-                  SizedBox(height: 20.0),
-                  _buildEmailTextField(),
                   SizedBox(height: 20.0),
                   _buildResidentialAddressTextField(),
                   SizedBox(height: 30.0),
