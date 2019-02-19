@@ -17,7 +17,7 @@ class AdminSupervisorList extends StatelessWidget {
               child: FadeInImage(
                 fit: BoxFit.cover,
                 image: AssetImage('assets/images/temp$index.jpg'),
-                placeholder: AssetImage('assets/images/loader.jpg'),
+                placeholder: AssetImage('assets/loader/loader.gif'),
               ),
             ),
           ),

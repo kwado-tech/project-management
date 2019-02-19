@@ -3,11 +3,6 @@ import 'package:project_manager/pages/admin_module/admin_supervisors/widgets/adm
 import 'package:project_manager/theme/theme_colors.dart';
 
 class AdminSupervisorsPage extends StatelessWidget {
-
-  void _navigateToSupervisorForm() {
-
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -17,7 +12,8 @@ class AdminSupervisorsPage extends StatelessWidget {
         floatingActionButton: FloatingActionButton(
             backgroundColor: tPrimaryColor,
             child: Icon(Icons.person_add),
-            onPressed: _navigateToSupervisorForm),
+            onPressed: () => Navigator.of(context)
+                .pushNamed('/admin-supervisor-form')),
         body: AdminSupervisorList());
   }
 }
