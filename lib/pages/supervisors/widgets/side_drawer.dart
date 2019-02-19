@@ -62,7 +62,8 @@ class SideDrawer extends StatelessWidget {
                             fontSize: 16.0,
                             fontWeight: FontWeight.bold),
                       ),
-                      onTap: () => Navigator.of(context).pushNamed('/admin-zones'),
+                      onTap: () =>
+                          Navigator.of(context).pushNamed('/admin-zones'),
                     ),
                     Divider(height: 20.0),
                     ListTile(
@@ -77,11 +78,13 @@ class SideDrawer extends StatelessWidget {
                             fontSize: 16.0,
                             fontWeight: FontWeight.bold),
                       ),
-                      onTap: () {},
+                      onTap: () => Navigator.of(context)
+                          .pushNamed('/admin-project-managers'),
                     ),
                     Divider(height: 20.0),
                     ListTile(
-                      onTap: () => Navigator.of(context).pushNamed('/admin-supervisors'),
+                      onTap: () =>
+                          Navigator.of(context).pushNamed('/admin-supervisors'),
                       leading: CircleAvatar(
                           backgroundColor: tBackgroundColor,
                           child: Icon(Icons.supervisor_account,
