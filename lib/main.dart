@@ -7,6 +7,7 @@ import 'package:project_manager/pages/admin_module/admin_supervisor_form/admin_s
 import 'package:project_manager/pages/admin_module/admin_supervisors/admin_supervisors_page.dart';
 import 'package:project_manager/pages/admin_module/admin_zones/admin_zones_page.dart';
 import 'package:project_manager/pages/auth/auth_page.dart';
+import 'package:project_manager/pages/staff_module/staff_profile_timeline/staff_profile_timeline_page.dart';
 import 'package:project_manager/pages/supervisor_details/supervisor_details.dart';
 import 'package:project_manager/pages/supervisors/supervisors_page.dart';
 import 'package:project_manager/theme/theme_colors.dart';
@@ -37,7 +38,9 @@ class MyApp extends StatelessWidget {
         '/admin-supervisors': (BuildContext context) => AdminSupervisorsPage(),
         '/admin-supervisor-form': (BuildContext context) => AdminSupervisorFormPage(),
         '/admin-staffs': (BuildContext context) => AdminStaffsPage(),
-        '/admin-staff-form': (BuildContext context) => AdminStaffFormPage()
+        '/admin-staff-form': (BuildContext context) => AdminStaffFormPage(),
+
+        '/staff-timeline': (BuildContext context) => StaffProfileTimeline()
       },
     );
   }

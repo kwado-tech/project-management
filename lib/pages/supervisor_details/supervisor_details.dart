@@ -210,6 +210,8 @@ class SupervisorDetailsPage extends StatelessWidget {
                                 physics: ClampingScrollPhysics(),
                                 itemBuilder: (BuildContext context, int index) {
                                   return ListTile(
+                                    onTap: () => Navigator.of(context)
+                                        .pushNamed('/staff-timeline'),
                                     leading: CircleAvatar(
                                       backgroundImage: AssetImage(
                                           'assets/images/temp$index.jpg'),
