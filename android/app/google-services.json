@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "989554010754",
+    "firebase_url": "https://cooperate-project-management.firebaseio.com",
+    "project_id": "cooperate-project-management",
+    "storage_bucket": "cooperate-project-management.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:989554010754:android:99b91c5d93d138ff",
+        "android_client_info": {
+          "package_name": "com.example.projectmanager"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "989554010754-0kcq9vqu8aqad3p2ifcmngv2a7ahkaa0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKx-WSSYmxoX9txUj0iRgoHoBR1EWPsM0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
