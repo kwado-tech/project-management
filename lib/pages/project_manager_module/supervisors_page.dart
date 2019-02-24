@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:project_manager/pages/supervisors/widgets/side_drawer.dart';
-import 'package:project_manager/pages/supervisors/widgets/supervisor_item.dart';
+import 'package:project_manager/pages/project_manager_module/widgets/supervisors/side_drawer.dart';
+import 'package:project_manager/pages/project_manager_module/widgets/supervisors/supervisor_item.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
 class SupervisorsPage extends StatelessWidget {

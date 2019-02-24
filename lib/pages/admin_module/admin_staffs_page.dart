@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_manager/pages/admin_module/admin_staffs/widgets/admin_staff_list.dart';
+import 'package:project_manager/pages/admin_module/widgets/staffs/admin_staff_list.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
 class AdminStaffsPage extends StatelessWidget {

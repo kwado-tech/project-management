@@ -3,14 +3,12 @@ import 'package:project_manager/theme/theme_colors.dart';
 
 class AdminProjectManagerForm extends StatefulWidget {
   @override
-  _AdminProjectManagerFormState createState() => _AdminProjectManagerFormState();
+  _AdminProjectManagerFormState createState() =>
+      _AdminProjectManagerFormState();
 }
 
 class _AdminProjectManagerFormState extends State<AdminProjectManagerForm> {
-  List<String> _roles = [
-    'Manager',
-    'Supervisor',
-  ];
+  List<String> _roles = [];
 
   String _roleController;
 
@@ -46,7 +44,7 @@ class _AdminProjectManagerFormState extends State<AdminProjectManagerForm> {
     return DropdownButtonHideUnderline(
       child: DropdownButton<String>(
         isExpanded: true,
-        hint: Text('Select project-manager role',
+        hint: Text('Select project manager role',
             style: TextStyle(
                 color: Theme.of(context).primaryColor,
                 fontWeight: FontWeight.bold)),
@@ -184,7 +182,7 @@ class _AdminProjectManagerFormState extends State<AdminProjectManagerForm> {
               padding: EdgeInsets.all(20.0),
               child: Column(
                 children: <Widget>[
-                  _buildCategoryLabel(labelText: 'Roles', sizedBox: false),
+                  _buildCategoryLabel(labelText: 'Zones', sizedBox: false),
                   _buildZonesDropDownField(),
                   _buildCategoryLabel(labelText: 'Bio Details'),
                   _buildSurnameTextField(),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:project_manager/pages/admin_module/admin_supervisor_form/widgets/admin_supervisor_form.dart';
+import 'package:project_manager/pages/admin_module/widgets/supervisor_form/admin_supervisor_form.dart';
 
 class AdminSupervisorFormPage extends StatefulWidget {
   @override

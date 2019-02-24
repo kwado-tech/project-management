@@ -1,7 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:project_manager/pages/admin_module/admin_zones/widgets/admin_zone_list.dart';
+import 'package:project_manager/pages/admin_module/widgets/admin_zones/admin_zone_list.dart';
 import 'package:project_manager/theme/theme_colors.dart';
 
 class AdminZonesPage extends StatefulWidget {
