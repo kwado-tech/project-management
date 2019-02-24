@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:project_manager/pages/admin_module/admin/admin_page.dart';
+import 'package:project_manager/pages/admin_module/admin_form/admin_form_page.dart';
 import 'package:project_manager/pages/admin_module/admin_project_manager_form/admin_project_manager_form_page.dart';
 import 'package:project_manager/pages/admin_module/admin_project_managers/admin_project_managers_page.dart';
 import 'package:project_manager/pages/admin_module/admin_staff_form/admin_staff_form_page.dart';
@@ -29,6 +31,10 @@ class MyApp extends StatelessWidget {
         '/supervisors': (BuildContext context) => SupervisorsPage(),
         '/supervisor-details': (BuildContext context) =>
             SupervisorDetailsPage(),
+        '/admins': (BuildContext context) =>
+            AdminPage(),
+        '/admin-form': (BuildContext context) =>
+            AdminFormPage(),
         '/admin-zones': (BuildContext context) =>
             AdminZonesPage(),
         '/admin-project-managers': (BuildContext context) =>
